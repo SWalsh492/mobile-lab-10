@@ -1,7 +1,7 @@
 <ion-header [translucent]="true">
   <ion-toolbar>
     <ion-title>
-      Blank
+      GPS & Browser
     </ion-title>
   </ion-toolbar>
 </ion-header>
@@ -9,11 +9,21 @@
 <ion-content [fullscreen]="true">
   <ion-header collapse="condense">
     <ion-toolbar>
-      <ion-title size="large">Blank</ion-title>
+      <ion-title size="large">GPS & Browser</ion-title>
     </ion-toolbar>
   </ion-header>
 
   <div id="container">
- <h3>Welcome to Mobile Apps Starter project 2023</h3>
+ <h3>Ionic lab GPS & Browser</h3>
+
+ <ion-button (click)="getGPS()">GPS</ion-button>
+ <br>
+ {{long}},{{lat}}
+ <br>
+ {{time}}
+
+<br><br>
+ <h3>Browser</h3>
+<ion-button (click)="openBrowser()">Open in Browser</ion-button>
   </div>
 </ion-content>
